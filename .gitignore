@@ -1,0 +1,11 @@
+*/enabled/*
+.DS_Store
+custom/*
+!custom/example.zbash
+.rvmrc
+aliases/custom.aliases.zbash
+completion/custom.completion.zbash
+lib/custom.zbash
+plugins/custom.plugins.zbash
+*.swp
+.*.un~

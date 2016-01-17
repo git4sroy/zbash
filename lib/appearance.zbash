@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# colored grep
+alias grep='grep --color=auto'
+export GREP_COLOR='1;33'
+
+# colored ls
+export LSCOLORS='Gxfxcxdxdxegedabagacad'
+
+if [[ -z "$CUSTOM_THEME_DIR" ]]; then
+    CUSTOM_THEME_DIR="${ZBASH}/custom/themes"
+fi
+
+# Load the theme
+if [[ $ZBASH_THEME ]]; then
+    if [[ -f "$CUSTOM_THEME_DIR/$ZBASH_THEME/$ZBASH_THEME.theme.zbash" ]]; then
+        source "$CUSTOM_THEME_DIR/$ZBASH_THEME/$ZBASH_THEME.theme.zbash"
+    else
+        source "$ZBASH/themes/$ZBASH_THEME/$ZBASH_THEME.theme.zbash"
+    fi
+fi

@@ -1,0 +1,19 @@
+if [[ $BASH_PREVIEW ]];
+then
+  unset BASH_PREVIEW #Prevent infinite looping
+  echo "
+
+  Previewing zbash Themes
+
+  "
+
+  THEMES="$ZBASH/themes/*/*.theme.zbash"
+  for theme in $THEMES
+  do
+    ZBASH_THEME=${theme%.theme.zbash}
+    ZBASH_THEME=${ZBASH_THEME##*/}
+    echo "
+    $ZBASH_THEME"
+    echo "" | bash --init-file $ZBASH/ZBASH.sh -i
+  done
+fi
