@@ -8,7 +8,7 @@ export ZBASH="{{ZBASH}}"
 export ZBASH_THEME='bakke'
 
 # Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
+export GIT_HOSTING='git4sroy@github.com'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
@@ -27,4 +27,4 @@ export SCM_CHECK=true
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
 # Load Bash It
-source $ZBASH/ZBASH.sh
+source $ZBASH/zbash.sh
